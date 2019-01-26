@@ -4,17 +4,21 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Possible {
+public class IsPossible1Err {
 
-    @Test
-    public void case1() {
-        assertEquals("Yes", isPossible(1,4,5,9));
-    }
+    @Test public void case1() { assertEquals("Yes", isPossible(1,4,5,9)); }
+    @Test public void case2() { assertEquals("No", isPossible(1,4,5,8)); }
+    @Test public void case3() { assertEquals("No", isPossible(1,4,5,10)); }
+    @Test public void case4() { assertEquals("No", isPossible(1,4,4,9)); }
+    @Test public void case5() { assertEquals("No", isPossible(1,4,6,9)); }
+    @Test public void case6() { assertEquals("Yes", isPossible(1,1,2,3)); }
+    @Test public void case7() { assertEquals("Yes", isPossible(1,1,3,2)); }
 
-    @Test
-    public void case2() {
-        assertEquals("No", isPossible(1,2,3,6));
-    }
+    @Test public void case8() { assertEquals("No", isPossible(1,2,3,6)); }
+    @Test public void case9() { assertEquals("Yes", isPossible(0,0,0,0)); }
+    @Test public void case10() { assertEquals("No", isPossible(5,9,1,4)); }
+    @Test public void case11() { assertEquals("Yes", isPossible(5,9,5,9)); }
+
 
     public static String isPossible(int a, int b, int c, int d) {
         // Write your code here
