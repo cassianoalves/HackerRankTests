@@ -1,3 +1,5 @@
+package hackerrank;
+
 import org.junit.Assert;
 import org.junit.Test;
 
